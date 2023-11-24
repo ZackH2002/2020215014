@@ -1,7 +1,7 @@
-# main.py
-from messaging import send_sms
+# main.py on feature_branch
+from messaging import send_group_sms
 
 if __name__ == "__main__":
-    message = "Hello, this is a test message!"
-    send_sms(message)
-# new function
+    message = "New feature added in the feature_branch!"
+    recipients = ["+1111111111", "+2222222222"]
+    send_group_sms(message, recipients)
